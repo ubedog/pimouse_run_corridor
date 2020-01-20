@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pimouse_run_corridor</name>
+  <version>0.0.0</version>
+  <description>The pimouse_run_corridor package</description>
+
+  <maintainer email="raspberrypi1808@gmail.com">ubuntu</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>pimouse_ros</exec_depend>
+
+</package>
