@@ -15,7 +15,7 @@ class WallStop():
         self.sensors = messages
 
     def decision(self,sensor_sum_all):
-        linear = 0.0 if sensor_sum_all >= 500 else 0.5
+        linear = 0.0 if sensor_sum_all >= 500 else 0.2
         angular = 0.0
         return linear, angular
 
