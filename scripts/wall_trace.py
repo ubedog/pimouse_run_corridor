@@ -53,8 +53,7 @@ if __name__ == '__main__':
     rospy.wait_for_service('/motor_off')
 
     rospy.on_shutdown(rospy.ServiceProxy('/motor_off',Trigger).call)
-    if not rospy.ServiceProxy('/motor_on',Trigger).call().success:
-        rospy.logerr("motors are not empowered")
-        sys.exit(1)
+    rospy.ServiceProxy('/motor_on',Trigger).call()
 
-    WallStop().run()
+    w = WallTrace()
+    w.run()
