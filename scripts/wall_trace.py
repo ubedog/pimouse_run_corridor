@@ -29,8 +29,8 @@ class WallTrace():
                 data.linear.x = 0.0
             elif data.linear.x <= 0.2:
                 data.linear.x = 0.2
-            elif data.linear.x >= 1.2:
-                data.linear.x = 1.2
+            elif data.linear.x >= 1.0:
+                data.linear.x = 1.0
 
             if data.linear.x < 0.2:
                 data.angular.z = 0.0
