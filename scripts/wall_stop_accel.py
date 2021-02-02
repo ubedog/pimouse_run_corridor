@@ -10,7 +10,7 @@ class WallTrace():
         self.cmd_vel = rospy.Publisher('/cmd_vel',Twist,queue_size=1)
 
         self.sensor_values = LightSensorValues()
-        rospy.Subscriber('/lightsensors', LightSensorValues, self.callback_sensors)
+        rospy.Subscriber('/lightsensors', LightSensorValues, self.callback_lightsensors)
         
 
     def callback_lightsensors(self,messages):
