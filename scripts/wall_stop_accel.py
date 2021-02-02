@@ -14,8 +14,7 @@ class WallTrace():
         
 
     def callback_lightsensors(self,messages):
-        self.sensors_values = messages
-
+        self.sensor_values = messages
 
     def run(self):
         rate = rospy.Rate(10)
